@@ -1,3 +1,7 @@
+#Geral
+alias ls='ls -lah --color'
+
+
 #kubernetes commands
 alias k='kubectl'
 
@@ -9,6 +13,11 @@ alias drmall='docker rm -f $(docker ps -a -q)'
 alias dimg='docker images'
 alias drmi='docker rmi -f '
 alias drmiall='docker rmi -f $(docker images -q)'
+
+
+
+alias spotifyd='/usr/bin/spotifyd'
+
 
 #dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'

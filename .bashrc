@@ -36,4 +36,10 @@ fi
 # Otherwise start tmux
 [[ -z "$TMUX" ]] && exec tmux
 
+
+HISTSIZE=-1
+HISTFILESIZE=-1
+
+export PROMPT_COMMAND="history -a; history -n"
+
 unset rc
